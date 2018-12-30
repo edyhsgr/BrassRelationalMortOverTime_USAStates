@@ -5,7 +5,7 @@
 #(related blog post: https://www.monicaalexander.com/2018/12/21/lifespan-variation-as-a-measure-of-mortality-progress-and-inequality/) 
 #
 #All data is from the United States Mortality Database (https://usa.mortality.org/) 
-#(downloaded/extracted the bundled lifetables.zip file)
+#(using the bundled lifetables.zip file)
 ##########
 
 ##########
