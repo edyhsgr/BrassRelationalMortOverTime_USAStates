@@ -100,7 +100,7 @@ ggsave("C:/.../BABB.png", height=7,width=12)
 
 ##########
 #Plot state graphs, BA and e0
-e0BAfit<-lm(BABBe0$e0~BABBe0$BA)
+e0BAfit<-lm(BABBe0$e0[BABBe0$Sex=="b"]~BABBe0$BA[BABBe0$Sex=="b"])
 
 BABBe0 %>% 
   filter(Sex=="b", Year>1959) %>% 
