@@ -6,4 +6,3 @@ Following code/steps by UToronto professor Monica Alexander as a template: https
 (related blog post: https://www.monicaalexander.com/2018/12/21/lifespan-variation-as-a-measure-of-mortality-progress-and-inequality/) 
 
 Data is from the United States Mortality Database (https://usa.mortality.org/) (using the bundled lifetables.zip file)
-and the Human Mortality Database (https://www.mortality.org/)
