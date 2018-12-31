@@ -97,12 +97,12 @@ BABBe0 %>%
        colour = "")  +
   theme_bw() + 
   scale_x_continuous(breaks=seq(1980, 2010, 30))
-ggsave("C:/.../BABB_USstandard.png", height=7,width=12)
+ggsave("C:/.../BABB_HMDUSstandard.png", height=7,width=12)
 ##########
 
 ##########
 #Plot state graphs, BA and e0
-e0BAfit<-lm(BABBe0$e0~BABBe0$BA)
+e0BAfit<-lm(BABBe0$e0[BABBe0$Sex=="b"]~BABBe0$BA[BABBe0$Sex=="b"])
 
 BABBe0 %>% 
   filter(Sex=="b", Year>1959) %>% 
@@ -118,7 +118,7 @@ BABBe0 %>%
        colour = "")  +
   theme_bw() + 
   scale_x_continuous(breaks=seq(1980, 2010, 30))
-ggsave("C:/.../BAe0_USstandard.png", height=7,width=12)
+ggsave("C:/.../BAe0_HMDUSstandard.png", height=7,width=12)
 ##########
 
 ##########
