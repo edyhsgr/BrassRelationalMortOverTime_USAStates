@@ -76,7 +76,6 @@ summarise()
 
 BABBe0<-brass %>% 
   left_join(e0, by = c("PopName","Sex","Year"))
-
 ##########
 
 ##########
