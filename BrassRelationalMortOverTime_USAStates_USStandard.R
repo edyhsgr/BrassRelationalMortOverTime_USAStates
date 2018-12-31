@@ -116,7 +116,7 @@ BABBe0 %>%
        colour = "")  +
   theme_bw() + 
   scale_x_continuous(breaks=seq(1980, 2010, 30))
-ggsave("C:/.../BABB_USUSMDstandard.png", height=7,width=12)
+ggsave("C:/.../BABB_USstandard.png", height=7,width=12)
 ##########
 
 ##########
@@ -137,7 +137,7 @@ BABBe0 %>%
        colour = "")  +
   theme_bw() + 
   scale_x_continuous(breaks=seq(1980, 2010, 30))
-ggsave("C:/.../BAe0_USUSMDstandard.png", height=7,width=12)
+ggsave("C:/.../BAe0_USstandard.png", height=7,width=12)
 ##########
 
 ##########
