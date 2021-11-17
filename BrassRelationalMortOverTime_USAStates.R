@@ -22,11 +22,24 @@ lt_male <- c()
 lt_female <- c()
 lt_both <- c()
 
+column_types<-list(
+  Sex = col_character(),
+  Year = col_double(),
+  Age = col_character(),
+  mx = col_double(),
+  qx = col_double(),
+  ax = col_double(),
+  lx = col_double(),
+  dx = col_double(),
+  Lx = col_double(),
+  Tx = col_double(),
+  ex = col_double())
+
 for(i in 1:length(states)){
   folder_path <- paste0("C:/.../lifetables/States/",states[i])
-  state_male <- read_csv(paste0(folder_path, "/", states[i], "_mltper_1x1.csv"))
-  state_female <- read_csv(paste0(folder_path, "/", states[i], "_fltper_1x1.csv"))
-  state_both <- read_csv(paste0(folder_path, "/", states[i], "_bltper_1x1.csv"))
+  state_male <- read_csv(paste0(folder_path, "/", states[i], "_mltper_1x1.csv"),col_types=column_types)
+  state_female <- read_csv(paste0(folder_path, "/", states[i], "_fltper_1x1.csv"),col_types=column_types)
+  state_both <- read_csv(paste0(folder_path, "/", states[i], "_bltper_1x1.csv"),col_types=column_types)
  
   lt_male <- rbind(lt_male, state_male)
   lt_female <- rbind(lt_female, state_female)
